@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --tt-color: #B52184;
+    --text-color: hwb(244 18% 61%);
+    --bg-color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+main{
+    margin: 0 auto;
+}
+body{
+    background: linear-gradient(to left, #302C63, #343193 );
+}
+section:first-child{
+    text-align: center;
+    
+}
+.container{
+    width: 43rem;
+    padding: 0 3.9rem;
+    margin: 0 auto;
+}
+#astronaut{
+    width: 30rem;
+
+}
+#seta{
+    margin: 3.5rem 0 9.3rem;
+}
+section{
+    background-color: var(--bg-color);
+}
+p{
+    color: var(--text-color);
+}
+h1, h2{
+    color: var(--tt-color);
+    margin-top: 1.7rem;
+}
+h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+p{
+    font-weight: 600;
+    font-size: 2rem;
+}
+h2{
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 3.3rem 0 2rem;
+}
+article{
+    background: var(--bg-color);
+    border-radius: 2rem;
+    padding: 2.6rem;
+}
+#planets{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 5.3rem auto;
+}
+article p{
+    font-size: 1.6rem;
+}
+form{
+    padding: 7.8rem 0 3.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+span{
+    color: var(--tt-color);
+    font-weight: 900;
+    font-size: 3.2rem;
+    margin-bottom: 2.3rem;
+}
+input, textarea{
+    width: 100%;
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+textarea{
+    resize: none;
+}
+
+.input-wrapper, textarea{
+    font-family: 'Mulish', sans-serif;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+    border: 1px solid var(--text-color);
+    display: flex;
+    gap: 1.2rem;
+}
+.sr-only{
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+
+}
+input{
+    border: none;
+    outline: none;
+}
+button{
+    background: linear-gradient(to left, #302C63, #343193 );
+    padding: 1rem 1.6rem;
+    border-radius: 1.6rem;
+    border: none;
+    margin-bottom: 7.5rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+button, footer{
+    color: var(--bg-color);
+}
+footer{
+    text-align: center;
+    padding: 3.2rem;
+    font-size: 2rem;
+}
+#stars{
+    display: none;
+}
+@media (min-width: 700px) {
+    #astronaut{
+        width: 70rem;
+        display: flex;
+        height: 100%;
+    }
+    .container{
+        width: 100%;
+        padding: 0 11rem;
+    }
+    #planets{
+        padding: 6.4rem 11rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        overflow: hidden;
+        gap: 0;
+    }
+    #stars{
+        display: flex;
+        right: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        font-size: 5.8rem;
+    }
+    h2{
+        font-size: 3.5rem;
+    }
+    article{
+        font-size: 2rem;
+        width: 35rem;
+        
+    }
+    #first-section div{
+        margin-top: 31rem;
+        
+    }
+    #first-section{
+        width: 100%;
+        grid-template-columns: max-content;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        justify-content: space-between;
+    }
+    #seta{
+        margin-top: 17rem;
+    }
+    section:last-child img{
+        align-self:flex-end;
+        display: flex;
+    }
+    section:last-child{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    span{
+        font-size: 4.2rem;
+    }
+    input, textarea{
+        font-size: 1.6rem;
+    }
+}
